@@ -31,3 +31,11 @@ Less complex builds:
 
 ## Troubleshooting
 
+### `clang: error: unknown argument: '-fsanitize-coverage=trace-pc-guard'`
+
+For that flag, one needs at least `clang` 4.0.
+
+As of 2017-04-27, the version that can be install from packages is `clang` 3.8.
+
+See [travis_qmake_clang_cpp17_libfuzzer](https://www.github.com/richelbilderbeek/travis_qmake_clang_cpp17_libfuzzer) 
+how to install clang's most recent version.
