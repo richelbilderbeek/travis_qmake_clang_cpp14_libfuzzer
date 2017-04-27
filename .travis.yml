@@ -20,3 +20,6 @@ script:
   - qmake
   - make
   - ./travis_qmake_clang_cpp14_libfuzzer
+  # libFuzzer
+  - clang++ -fsanitize=address -fsanitize-coverage=trace-pc-guard test_fuzzer.cc libFuzzer.a
+  - ./a.out
